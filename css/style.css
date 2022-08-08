@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(4,9,20,0.7), rgba(4,9,20,0.7)), url(/images1/university.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.textbox{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 40px;
+}
+.textbox p{
+    color: white;
+    font-size: 20px;
+    margin: 15px 0px 40px;
+
+}
+.btn{
+    padding: 5px 10px;
+    border: 1px solid white;
+    background: transparent;
+    display: inline-block;
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 1s;
+    
+
+    
+}
+.btn:hover{
+    background-color: rgb(223, 146, 146);
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 12%;
+}
+nav img{
+    width: 250px;
+ margin: 1px;
+    
+}
+.navlink{
+    right: 10%;
+}
+
+.navlink ul{
+    
+    margin: 0;
+    padding: 0;
+    
+    
+    position: relative;
+
+}
+.navlink{
+    flex:1;
+    text-align: right;
+    
+
+}
+.navlink ul{
+    margin: 0px;
+    padding: 0;
+    position: relative;
+}
+.navlink ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 12px 12px;
+    position: relative;
+
+}
+.navlink ul ul{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    text-align: left;
+    /* display: none; */
+    visibility: hidden ;
+    opacity: 0;
+    transition: 0.5s;
+    
+
+}
+.navlink ul ul li{
+    width: 150px;
+    
+}
+.navlink ul ul ul{
+    top: 0;
+    left: 100%;
+}
+
+.navlink ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.navlink ul li:hover > ul{
+    /* display: block ; */
+visibility: visible;
+opacity: 1;
+    background-color: rgb(94, 84, 84);
+    border: 1px solid black;
+
+
+}
+.navlink i{
+    margin-left: 15px;
+}
+.navlink ul li a:hover{
+    color: red;
+
+}
+
+/* Course */
+
+.course{
+    width: 80%;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+
+}
+h1{
+    font-size: 32px;
+    font-weight:600;
+
+}
+p{
+    color: #777 ;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+}
+.row{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.coursecol{
+    background-color: #f0c8c8;
+    flex-basis: 31%;  
+    border-radius: 10px;
+    padding: 20px 9px;
+    transition: 0.5s;
+
+}
+h3{
+    font-weight: 700;
+    text-align: center;
+}
+.coursecol:hover{
+    box-shadow: 0 0 40px 0 rgba(223, 55, 55, 0.9);
+    cursor: pointer;      
+}
+
+/* Campus */
+
+.campus{
+    width: 80%;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+
+}
+.campuscol {
+    flex-basis: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+}
+.campuscol img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.layer:hover{
+    background: rgba(184, 34, 34, 0.5);
+}
+.layer h3{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.layer:hover h3{
+    opacity: 1;
+    bottom: 49%;
+}
+.facilities{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.facilitiescol{
+    flex-basis: 31%;
+    text-align: left;
+
+}
+.facilitiescol img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilitiescol p{
+    padding: 0;
+    margin-top: 15px;
+}
+
+.facilitiescol h3{
+text-align: left;
+font-size: 20px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.testimonial{
+    width: 80%;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+.testimonialcol{
+    flex-basis: 44%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    display: flex;
+
+    
+}
+.testimonialcol img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.testimonial p{
+    padding: 0;
+    
+
+}
+.testimonialcol h3{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+.testimonialcol .icon{
+    color: goldenrod;
+}
+.cta{
+    width: 80%;
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images1/banner2.jpg);
+    background-position: center ;
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.cta h2{
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 15px;
+    font-size: 30px;
+
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.footer h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.icon{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.icon .fa-brands{
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.fa-heart{
+    color: red;
+}
+
+
